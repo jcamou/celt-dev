@@ -1,0 +1,45 @@
+
+.section-title {
+  margin-bottom: 2em;
+  font-size: 1.5em;
+  font-weight: 600;
+}
+
+.side-bar_navigation {
+
+  ul.menu {
+    list-style-type: none;
+    margin-left: 0;
+  }
+
+  .menu-item {
+    border: 1px solid $tan-border;
+    background-color: #f9f9f3;
+    margin-top: -1px;
+    font-size: .875em;
+
+    a {
+      display: block;
+      padding: .5em 1em;
+      color: $black-light;
+    }
+
+    &:hover {
+      background-color: #f4f3e8;
+    }
+
+    &.active, &.current-page-ancestor {
+      background-color: $tan-dark;
+      border-color: $tan-border-dark; 
+      border-bottom: 3px solid #cd0c2a;
+
+      &:last-of-type {
+        border-bottom: 2px solid #cd0c2a;
+      }
+
+      a {
+        color: $celt-red;
+      }
+    }
+  }
+}

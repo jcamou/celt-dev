@@ -1,0 +1,26 @@
+.after-article-recommendation_container {
+  border-top: 1px solid $tan-border;
+
+  label {
+    font-style: italic;
+  }
+
+  a {
+    font-weight: 600;
+  }
+}
+
+.after-article-recommendation_next-page {
+  padding-top: 1em;
+  padding-left: 1.5em;
+  border-left: 1px solid $tan-border;
+  padding-bottom: 1em;
+  text-align: right;
+}
+
+.after-article-recommendation_back-to-top {
+  padding-top: 1em;
+  padding-bottom: 1em;
+  padding-right: 1.5em;
+  text-align: left;
+}

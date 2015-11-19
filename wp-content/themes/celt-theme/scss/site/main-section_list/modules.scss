@@ -1,0 +1,34 @@
+ul.main-section_subpage-list {
+  max-width: none;
+}
+
+.main-section_subpage-list {
+  list-style-type: none;
+  margin-left: 0;
+  padding-top: 1em;
+}
+
+.main-section_sublist-children-list {
+  list-style-type: none;
+  margin-left: 0;
+
+  .main-section_subpage-children-container {
+    margin-bottom: .875em;
+  }
+}
+
+
+.main-section_subpage-title {
+  font-weight: 600;
+
+}
+
+.main-section_subpage-excerpt {
+  font-size: .875em;
+  padding-top: .875em;
+}
+
+.main-section_subpage-children-title {
+  font-size: .875em;
+  color: $black-light;
+}

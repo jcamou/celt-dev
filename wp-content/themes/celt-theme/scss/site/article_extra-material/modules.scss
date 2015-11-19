@@ -1,0 +1,68 @@
+.parts_extra-material {
+  position: fixed;
+  right: 2em;
+  top: 300px;
+  max-width: 250px;
+  border: 1px solid $tan-border;
+  padding: .5em 1em;
+  background-color: white;
+
+  h1 {
+    font-size: 1em;
+    font-weight: 600;
+    color: $black-light;
+  }
+
+  h2 {
+    font-size: .875em;
+    font-style: italic;
+    margin-bottom: .5em;
+    font-weight: 400;
+  }
+
+  ul {
+    list-style-type: none;
+    margin-left: .5em;
+    margin-bottom: 1em;
+  }
+
+  li {
+    font-size: .875em;
+    margin-bottom: .875em;
+  }
+
+  @media only screen and (max-width: 1460px) {
+    max-width: 200px;
+    right: 0;
+  }
+
+  @media only screen and (max-width: 1320px) {
+    position: relative;
+    right: 0;
+    top: 0;
+    max-width: 100%;
+    border: none;
+    padding: 0;
+    border-top: 1px solid $tan-border;
+
+    h1 {
+      font-size: 1.15em;
+      color: $black;
+      padding-top: 1em;
+      margin-bottom: 2em;
+    }
+
+    h2 {
+      font-size: 1em;
+      margin-bottom: 1em;
+    }
+
+    ul {
+      list-style-type: initial;
+    }
+
+    li {
+      font-size: 1em;
+    }
+  }
+}
