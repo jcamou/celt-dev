@@ -1,0 +1,7 @@
+// Add some whitespace above the footer for medium-up screens
+@media #{$medium-up} {
+	.site-footer {
+    background-color: $black-footer;
+    min-height: 8em;
+  }
+}

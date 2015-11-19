@@ -1,0 +1,13 @@
+.container {
+  @media only screen and (max-width: $small-breakpoint) {
+    padding: 0 1em;
+  }
+  @media only screen and (max-width: $medium-breakpoint) {
+    padding: 0 2em;
+  }
+
+  @media only screen and (max-width: $large-breakpoint) {
+    padding: 0 2em;
+  }
+}
+

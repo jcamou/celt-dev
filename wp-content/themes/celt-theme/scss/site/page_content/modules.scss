@@ -1,0 +1,48 @@
+article header {
+  margin-bottom: 2em;
+  h1{
+    font-size: 1.5em;
+    font-weight: 600;
+  }
+}
+
+.entry-content {
+
+  padding-bottom: 2em;
+
+  h2 {
+    font-size: 1.15em;
+    font-weight: 600;
+    padding-top: 1em;
+    margin-bottom: 2em;
+  }
+
+  h3 {
+    font-size: 1em;
+    color: #464646;
+    font-weight: 600;
+    margin-bottom: 1.5em;
+  }
+
+  p {
+    line-height: 1.75em;
+    max-width: 40em;
+  }
+
+  ul {
+    max-width: 40em;
+    margin-bottom: 2em;
+  }
+
+  li {
+    margin-bottom: 1.5em;
+  }
+
+  hr {
+    border-color: $tan-border;
+  }
+
+  blockquote {
+    border-left-color: $tan-border;
+  }
+}

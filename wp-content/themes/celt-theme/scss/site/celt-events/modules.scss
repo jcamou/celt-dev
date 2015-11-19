@@ -1,0 +1,26 @@
+.celt-events {
+  .feedTitle { display: none; }
+  ul { 
+    list-style-type: none;
+    margin-left: 0;
+  }
+
+  li {
+    border-bottom: 1px solid $tan-border;
+    padding-bottom: 1.5em;
+
+    & > div {
+      font-size: .875em;
+    }
+  }
+
+  .headline {
+    font-size: 1.15em;
+    font-weight: $bold;
+  }
+
+  .date {
+    font-weight: $bold;
+    color: $black-light;
+  }
+}

@@ -1,0 +1,49 @@
+.directory-list {
+  list-style-type: none;
+  margin-left: 0;
+  width: 100%
+}
+
+.directory-list_profile {
+  display: inline-block;
+}
+
+.directory-list_profile-picture {
+  float: left;
+}
+
+.directory-list_profile-info {
+  display: inline-block;
+  margin-left: 1em;
+  white-space: normal;
+
+}
+
+.directory-list_profile-name{
+  font-size: 1.15em;
+  font-weight: $bold;
+}
+.directory-list_profile-title {
+  // font-weight: $bold;
+  // color: $black-light;
+  font-style: italic;
+  margin-bottom: 1em;
+}
+.directory-list_profile-email {
+  font-size: .875em;
+  margin-bottom: .25em;
+  
+}
+.directory-list_profile-telephone {
+  font-size: .875em;
+}
+
+.directory-profile_header {
+  margin-bottom: 4em;
+}
+
+.directory-profile_picture {
+  margin-right: 2em;
+  margin-bottom: 1em;
+  float: left;
+}
