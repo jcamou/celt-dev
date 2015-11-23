@@ -4,7 +4,9 @@ Template Name: CELT Events
 */
 get_header(); ?>
 <div class="row">
-    <div class="small-12 large-8 large-push-4 columns" role="main">
+    
+    <?php get_sidebar( 'left' ); ?>
+    <div class="small-12 large-8 columns right" role="main">
 
         <?php do_action( 'foundationpress_before_content' ); ?>
 
@@ -40,6 +42,5 @@ get_header(); ?>
         <?php do_action( 'foundationpress_after_content' ); ?>
 
     </div>
-    <?php get_sidebar( 'left' ); ?>
 </div>
 <?php get_footer(); ?>

@@ -4,7 +4,7 @@ Template Name: Sub Section
 */
 get_header(); ?>
 <div class="row">
-    <div class="small-12 large-8 large-push-4 columns" role="main">
+    <div class="small-12 large-8 columns right" role="main">
 
         <?php do_action( 'foundationpress_before_content' ); ?>
 

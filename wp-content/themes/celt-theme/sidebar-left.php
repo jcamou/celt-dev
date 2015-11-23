@@ -21,7 +21,7 @@ if( is_page() ) {
   $class = get_the_title($id);
 }
 ?>
-<aside id="sidebar" class="small-12 large-3 columns large-pull-8 nav_side-bar left">
+<aside id="sidebar" class="small-12 large-3 columns  nav_side-bar left">
 	<?php do_action( 'foundationpress_before_sidebar' ); ?>
 	<a href="<?php echo get_permalink($id); ?>"><h2 class="section-title"><?php echo $class; ?></h2></a>
 	<?php dynamic_sidebar( 'sidebar-widgets' ); ?>
