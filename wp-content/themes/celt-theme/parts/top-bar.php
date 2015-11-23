@@ -7,12 +7,14 @@
  * @since FoundationPress 1.0
  */
 
+$celt_logo = wp_get_attachment_image_src(513, 'full');
+
 ?>
 <div class="top-bar-container contain-to-grid show-for-medium-up">
     <div class="top-bar">
         <div class="title-area">
             <span class="isu-nameplate">
-                <img src="http://localhost:8888/Github/celt-dev/wp-content/uploads/2015/11/logo.png">
+                <img src="<?php echo $celt_logo[0]; ?>" width="<?php echo $celt_logo[1]; ?>" height="<?php echo $celt_logo[2]; ?>">
             </span>
             <!-- <h1><a href="<?php echo home_url(); ?>"><?php bloginfo( 'name' ); ?></a></h1>
             <span><?php bloginfo( 'description' ); ?></span> -->

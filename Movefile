@@ -1,0 +1,61 @@
+local:
+  vhost: "http://localhost:8888/Github/celt-dev/"
+  wordpress_path: "/Applications/MAMP/htdocs/Github/celt-dev" # use an absolute path here
+
+  database:
+    name: "celt-base"
+    user: "root"
+    password: "root"
+    host: "localhost"
+
+staging:
+  vhost: "http://www.celt-staging.com/"
+  wordpress_path: "/srv/users/serverpilot/apps/celtstaging/public" # use an absolute path here
+
+  database:
+    name: "celtstaging-wp-Pjo15m6Z"
+    user: "EYlYxXjVwRAl"
+    password: "956bc5ebc8965a4d"
+    host: "localhost"
+    port: "3308" # Use just in case you have exotic server config
+
+  exclude:
+    - ".git/"
+    - ".gitignore"
+    - ".sass-cache/"
+    - "node_modules/"
+    - "bin/"
+    - "tmp/*"
+    - "Gemfile*"
+    - "Movefile"
+    - "wp-config.php"
+    - "wp-content/*.sql"
+
+  # paths: # you can customize wordpress internal paths
+  #   wp_content: "wp-content"
+  #   uploads: "wp-content/uploads"
+  #   plugins: "wp-content/plugins"
+  #   themes: "wp-content/themes"
+  #   languages: "wp-content/languages"
+  #   themes: "wp-content/themes"
+
+  ssh:
+    host: "162.243.192.94"
+    user: "serverpilot"
+    password: "956bc5ebc8965a4d" # password is optional, will use public keys if available.
+    #port: 22 # Port is optional
+    rsync_options: "--verbose" # Additional rsync options, optional
+    #gateway: # Gateway is optional
+      #host: "host"
+      #user: "user"
+      #password: "password" # password is optional, will use public keys if available.
+
+  # ftp:
+  #   user: "user"
+  #   password: "password"
+  #   host: "host"
+  #   passive: true
+
+# production: # multiple environments can be specified
+#   [...]
+
