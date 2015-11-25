@@ -13,3 +13,11 @@ $celt-red: #cd0c2a;
 
 $bold: 600;
 $regular: 400;
+
+
+// Clearfix
+.group:after {
+  content: "";
+  display: table;
+  clear: both;
+}

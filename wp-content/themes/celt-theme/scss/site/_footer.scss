@@ -1,7 +1,71 @@
 // Add some whitespace above the footer for medium-up screens
-@media #{$medium-up} {
-	.site-footer {
-    background-color: $black-footer;
-    min-height: 8em;
+
+.site-footer {
+  background-color: $black-footer;
+  padding: 2em 0;
+  min-height: 8em;
+  font-size: .875em;
+  color: white;
+
+  h6 {
+    font-size: 1em;
+    color: white;
+    font-weight: $bold;
+  }
+
+  ul {
+    list-style-type: none;
+    font-size: 1em;
+    margin-left: 0;
+
+    li { margin-bottom: .5em;}
+  }
+
+  a {
+    color: white;
+
+    &:hover {
+      color: $tan-border-dark;
+      text-decoration: underline;
+    }
   }
 }
+
+
+.logo-testing {
+  height: 30px;
+  background-image: image-url("Github/celt-dev/wp-content/themes/celt-theme/assets/img/isu-logo_inverse.svg");
+  background-repeat: no-repeat;
+  margin-bottom: 1em;
+}
+
+.footer_copyright {
+  span {
+    font-size: .875em;
+  }
+
+  @media only screen and (max-width: $medium-breakpoint) {
+    margin-bottom: 1.5em;
+  }
+
+}
+
+.footer_quick-links {
+
+  .columns+.columns:last-child {
+    float: none;
+  }
+  @media only screen and (max-width: $medium-breakpoint) {
+    margin-bottom: 1.5em;
+  }
+}
+
+.footer_follow {
+  text-align: right;
+
+  @media only screen and (max-width: $medium-breakpoint) {
+    text-align: left;
+  }
+
+}
+

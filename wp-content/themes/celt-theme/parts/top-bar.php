@@ -10,6 +10,7 @@
 $celt_logo = wp_get_attachment_image_src(513, 'full');
 
 ?>
+<?php get_template_part('parts/nav_isu-top-bar'); ?>
 <div class="top-bar-container contain-to-grid show-for-medium-up">
     <div class="top-bar">
         <div class="title-area">
