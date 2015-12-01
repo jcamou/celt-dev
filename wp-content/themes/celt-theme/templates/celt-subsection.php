@@ -19,16 +19,11 @@ get_header(); ?>
                     </div>
                     <h1 class="entry-title"><?php the_title(); ?></h1>
                     <?php 
-
                         $image = get_field('section_image');
                         $size = 'full'; // (thumbnail, medium, large, full or custom size)
-
                         if( $image ) {
-
                             echo wp_get_attachment_image( $image, $size );
-
                         }
-
                     ?>
                 </header>
                 <?php do_action( 'foundationpress_page_before_entry_content' ); ?>
@@ -51,5 +46,6 @@ get_header(); ?>
 
     </div>
     <?php get_sidebar( 'left' ); ?>
+    <?php get_template_part('parts/celt-article_extra-content-right'); ?>
 </div>
 <?php get_footer(); ?>

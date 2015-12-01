@@ -66,3 +66,29 @@
     }
   }
 }
+
+.celt-article_extra-content-right {
+  position: absolute;
+  right: 20px;
+  top: 325px;
+  max-width: 300px;
+  padding: .5em 1em;
+
+  h2, p, li {
+    font-size: .875em;
+  }
+
+  @media only screen and (max-width: 1464px) {
+    position: relative;
+    right: 0;
+    top: 0;
+    max-width: 25%;
+    border: none;
+    padding: 0;
+
+  }
+
+  @media only screen and (max-width: $medium-breakpoint) {
+    max-width: 100%;
+  }
+}

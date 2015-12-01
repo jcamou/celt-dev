@@ -83,7 +83,7 @@
 }
 
 .site-nav {
-	background-color: #f4f3e9;
+	background-color: $tan-dark;
 	margin: 0 auto;
 	border-bottom: 1px solid #deddd2;
 
@@ -95,7 +95,7 @@
 
 		li {
 			display: inline-block;
-			width: 24%;
+			width: 19%;
 			padding: 1.25em 1em;
     	font-size: 12px;
     	text-align: center;
@@ -104,8 +104,11 @@
 
     	a {
     		color: #363636;
-    	}
 
+        &:hover {
+          color: $celt-red;
+        }
+    	}
 		}
 	}
 

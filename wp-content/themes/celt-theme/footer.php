@@ -41,7 +41,7 @@ $footer_post_ID = 568;
       <div class="medium-12 large-2 columns">
         <?php if(have_rows('footer_social_links', $footer_post_ID)): ?>
           <div class="footer_follow">
-            <h6>Follow CELT</h6>
+            <h6>Contact CELT</h6>
             <ul>
               <?php while(have_rows('footer_social_links', $footer_post_ID)):the_row();?>
                 <li><a href="<?php the_sub_field('social_link_url', $footer_post_ID); ?>"><?php the_sub_field('social_link_name', $footer_post_ID);?></a></li>
