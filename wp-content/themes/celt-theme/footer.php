@@ -53,8 +53,6 @@ $footer_post_ID = 568;
     </div>
   </div>
 </footer>
-  </div>
-  
 <a class="exit-off-canvas"></a>
 
 	<?php do_action( 'foundationpress_layout_end' ); ?>
