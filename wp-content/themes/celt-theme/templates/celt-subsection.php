@@ -41,9 +41,7 @@ get_header(); ?>
                 <?php do_action( 'foundationpress_page_after_comments' ); ?>
             </article>
         <?php endwhile;?>
-
         <?php do_action( 'foundationpress_after_content' ); ?>
-
     </div>
     <?php get_sidebar( 'left' ); ?>
     <?php get_template_part('parts/celt-article_extra-content-right'); ?>
