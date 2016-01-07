@@ -9,7 +9,7 @@
 ?>
 
 <?php
-   $nextPage = next_page_not_post('', 'true', '');
+   $nextPage = next_page_not_post('', 'true', 'sort_order=desc');
 ?>
 
 <div class="after-article-recommendation_container column small-12 large-12">

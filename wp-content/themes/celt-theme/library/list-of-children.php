@@ -4,6 +4,7 @@
       'post_parent' => $postID,
       'post_type'   => 'page', 
       'numberposts' => -1,
+      'order'       => 'ASC',
       'orderby'     => 'menu_order',
       'post_status' => 'any' 
     );

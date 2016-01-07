@@ -4,7 +4,8 @@
       'post_parent' => $postID,
       'post_type'   => 'page', 
       'numberposts' => -1,
-      'orderby'     => 'menu_order',
+      'order'       => 'ASC',
+      'orderby'     => 'title',
       'post_status' => 'any' 
     );
 
@@ -27,6 +28,7 @@
                   'post_parent' => $children->ID,
                   'post_type'   => 'page', 
                   'numberposts' => -1,
+                  'order'       => 'ASC',
                   'orderby'     => 'menu_order',
                   'post_status' => 'any' 
                 );
