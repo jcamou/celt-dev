@@ -42,6 +42,7 @@ $warning-color: #f08a24;
 $info-color: #a0d3e8;
 
 $anchor-font-color-hover: scale-color($primary-color, $lightness: -24%);
+$anchor-text-decoration-hover: underline !default;
 
 // We use these to control various global styles
 $body-bg: $white;

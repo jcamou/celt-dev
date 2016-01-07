@@ -19,9 +19,13 @@
 	}
   
   .title-area {
-    max-height: 393px;
-    position: absolute;
-    top: 0;
+    // max-height: 393px;
+    // position: absolute;
+    // top: 0;
+    margin-top: 1em;
+    height: 53px;
+    width: 400px;
+    background-image: url("../assets/img/header-logo.png");
   }
 
 	@media only screen and (max-width: $small-breakpoint) {
