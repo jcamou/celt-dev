@@ -1,11 +1,10 @@
 <?php
 /*
-Template Name: CELT Article without Extra Materials
+Template Name: CELT Post
 */
 get_header(); ?>
 <div class="row">
     <div class="small-12 large-8 columns right" role="main">
-
         <?php do_action( 'foundationpress_before_content' ); ?>
 
         <?php while ( have_posts() ) : the_post(); ?>
@@ -23,34 +22,23 @@ get_header(); ?>
                 <?php do_action( 'foundationpress_page_before_entry_content' ); ?>
                 <div class="entry-content">
                     <?php the_content(); ?>
-                    <?php
-                        // check if the repeater field has rows of data
-                        if( have_rows('celt-milestone') ):
-                            ?>
-                            <h2>CELT Milestones</h2>
-                            <div class="about-milestones_list">
-                                <?php
-                                // loop through the rows of data
-                                while ( have_rows('celt-milestone') ) : the_row();
-                                    // display a sub field value
-                                    ?>
-                                    <div class="about-miletones_milestone">
-                                        <h3><?php the_sub_field('celt-milestone_year');?></h3>
-                                        <?php
-                                        the_sub_field('celt-milestone_event');?>
-                                    </div>
-                                    <?php
-                                endwhile;
-                                ?>
-                            </div>
-                            <?php
-                        else :
-                            // no rows found
-                        endif;
-                    ?>
+                    
                 </div>
                 <footer>
-                    <?php get_template_part('parts/after-article-recommendation'); ?>
+                    <?php
+                       $nextPage = get_next_posts_link();
+                    ?>
+
+                    <div class="after-article-recommendation_container column small-12 large-12">
+                      <div class="small-12 large-6 column after-article-recommendation_back-to-top left">
+                        <a href="#top">Back to Top</a>
+                      </div>
+                      <div class="small-12 large-6 column after-article-recommendation_next-page right">
+                        <label>Continue on</label>
+                        <?php previous_post_link( '%link', '%title', TRUE ); ?>
+
+                      </div>
+                    </div>
                     <?php wp_link_pages( array('before' => '<nav id="page-nav"><p>' . __( 'Pages:', 'foundationpress' ), 'after' => '</p></nav>' ) ); ?>
                     <p><?php the_tags(); ?></p>
                 </footer>
@@ -63,6 +51,12 @@ get_header(); ?>
         <?php do_action( 'foundationpress_after_content' ); ?>
 
     </div>
-    <?php get_sidebar( 'left' ); ?>
+    <aside id="sidebar" class="small-12 large-3 columns  nav_side-bar left">
+      <?php do_action( 'foundationpress_before_sidebar' ); 
+        $category = get_the_category();
+        $firstCategory = $category[0]->cat_name;
+      ?>
+      <a href="<?php echo get_permalink($id); ?>"><h2 class="section-title"><?php echo $firstCategory;?></h2></a>
+    </aside>
 </div>
 <?php get_footer(); ?>

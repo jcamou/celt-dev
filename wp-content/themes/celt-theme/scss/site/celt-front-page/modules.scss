@@ -1,0 +1,145 @@
+.celt_mini-header {
+  font-size: .875em;
+  text-transform: uppercase;
+  font-weight: $bold;
+}
+
+.front-page_intro {
+  margin-top: -2em;
+  margin-bottom: 3em;
+  padding-bottom: 2em;
+  background-color: $grey-light;
+  border-bottom: 1px solid $tan-border-dark;
+
+  @media only screen and (max-width: $large-breakpoint) {
+    background-color: transparent;
+  }
+
+}
+
+.front-page_feature-container {
+  margin-bottom: 2em;
+}
+
+.front-page_feature-text {
+  position: absolute;
+  color: white;
+  top: 2em;
+  left: 1.5em;
+
+  h2 {
+    color: white;
+    font-size: 1.5em;
+    font-weight: $bold;
+    background-color: rgba(0,0,0,.35);
+    padding: .5em;
+  }
+
+  p {
+    font-size: 1em;
+    background-color: rgba(0,0,0,.35);
+    padding: .5em;
+  }
+
+  @media only screen and (max-width: $medium-breakpoint) {
+    position: relative;
+    left: 0;
+    color: $black;
+    font-size: .875em;
+
+    h2, p {
+      color: $black;
+      background-color: transparent;
+      padding: 0;
+    }
+  }
+}
+
+.front-page_quick-link-container {
+
+  padding-right: 2em;
+
+  h2 {
+    font-size: 1em;
+    color: white;
+    font-weight: $bold;
+    background-color: $celt-yellow;
+    width: 100%;
+    padding: .5em 1em;
+    margin-bottom: 1em;
+  }
+
+  @media only screen and (max-width: $medium-breakpoint) {
+    padding-right: 0;
+  }
+}
+
+.front-page_quick-links-list {
+  list-style-type: none;
+
+  li {
+    margin-bottom: .5em;
+    font-size: .875em;
+  }
+}
+
+.celt-news_overview-container {
+  margin-bottom: 2em;
+}
+
+.celt-front-page_recent-posts {
+  border-left: 2px solid $celt-yellow;
+  padding-left: 1em;
+  padding-top: .5em;
+  margin-bottom: 2em;
+
+  .celt_mini-header {
+    display: inline-block;
+  }
+
+}
+
+.celt_recent-post-archive-link {
+  float: right;
+  margin-right: 1.5em;
+  font-style: italic;
+  font-size: .875em;
+  color: $black-light;
+}
+
+.recent-post_list {
+  list-style-type: none;
+  margin-left: 0;
+
+  li {
+    border-bottom: 1px solid $tan-border;
+    padding-top: 1em;
+    padding-right: 1em;
+    margin-right: 1em;
+
+    h3 {
+      font-size: 1em;
+      font-weight: $bold;
+    }
+
+    .post_date {
+      font-weight: 600;
+  color: $black-light;
+    }
+
+    p {
+      font-size: .875em;
+    }
+
+    &:last-of-type {
+      border-bottom: none;
+    }
+  }
+}
+
+.recent-post_most-recent {
+  h2 {
+    font-size: 1.25em;
+    font-weight: $bold;
+  }
+}

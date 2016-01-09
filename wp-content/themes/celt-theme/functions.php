@@ -62,6 +62,12 @@ require_once( 'library/breadcrumb_navxt_remove_curitm.php' );
 /** Grabs all directory profiles and displays them */
 require_once( 'library/directory_functions/directory_get-profiles.php' );
 
+/** Grabs recent posts of type passed in by user */
+require_once( 'library/front-page_functions/front-page_get-recent-posts.php' );
+
+/** Grabs recent tweets */
+require_once( 'library/front-page_functions/front-page_get-tweets.php' );
+
 /** Adds support for the custom post type - directory profiles */
 //require_once( 'library/add-post-type_directory-profile.php' );
 

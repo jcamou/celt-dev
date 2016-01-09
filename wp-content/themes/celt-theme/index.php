@@ -20,7 +20,7 @@ get_header(); ?>
 	<div class="small-12 large-8 columns" role="main">
 
 	<?php if ( have_posts() ) : ?>
-
+		<?php echo "hello"; ?>
 		<?php do_action( 'foundationpress_before_content' ); ?>
 
 		<?php while ( have_posts() ) : the_post(); ?>
