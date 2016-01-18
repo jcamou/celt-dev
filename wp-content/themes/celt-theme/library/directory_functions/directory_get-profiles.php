@@ -5,6 +5,7 @@
       'post_type'   => 'page', 
       'numberposts' => -1,
       'orderby'     => 'menu_order',
+      'order'       => 'ASC',
       'post_status' => 'any' 
     );
 

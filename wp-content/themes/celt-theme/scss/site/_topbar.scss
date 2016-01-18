@@ -25,7 +25,19 @@
     margin-top: 1em;
     height: 53px;
     width: 400px;
-    background-image: url("../assets/img/header-logo.png");
+
+    .title-area_isu-logo {
+      background-image: url("../assets/img/header-logo_isu.png");
+      display: block;
+      height: 32px;
+      width: 400px;
+    }
+    .title-area_celt-logo {
+      background-image: url("../assets/img/header-logo_celt.png");
+      display: block;
+      height: 21px;
+      width: 400px;
+    }
   }
 
 	@media only screen and (max-width: $small-breakpoint) {
@@ -103,7 +115,7 @@
 			display: inline-block;
 			width: 24%;
 			padding: 1.25em 1em;
-    	font-size: 12px;
+    	font-size: .875em;
     	text-align: center;
     	font-weight: 600;
     	text-transform: uppercase;

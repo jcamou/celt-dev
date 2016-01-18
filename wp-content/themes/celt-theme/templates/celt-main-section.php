@@ -1,6 +1,6 @@
 <?php
 /*
-Template Name: Main Section
+Template Name: CELT Main Section
 */
 
 get_header(); ?>

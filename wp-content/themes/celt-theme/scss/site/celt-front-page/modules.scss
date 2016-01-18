@@ -15,6 +15,10 @@
     background-color: transparent;
   }
 
+  @media only screen and (max-width: $medium-breakpoint) {
+    margin-top: 0;
+  }
+
 }
 
 .front-page_feature-container {

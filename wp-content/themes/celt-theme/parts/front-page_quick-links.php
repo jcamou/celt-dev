@@ -46,7 +46,8 @@
         ?>
       </div>
     </div>
-    <div class="small-12 large-3 right columns">
-      <h1 class="celt_mini-header">Tweets</h1>
+    <div class="small-12 large-4 right columns">
+      <a class="twitter-timeline" href="https://twitter.com/isucelt" data-widget-id="528236395203006466" height="216" >Tweets by @isucelt</a>
+      <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
     </div>
   </div>

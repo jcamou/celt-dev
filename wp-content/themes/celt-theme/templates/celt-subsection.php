@@ -1,6 +1,6 @@
 <?php
 /*
-Template Name: Sub Section
+Template Name: CELT Sub Section
 */
 get_header(); ?>
 <div class="row">
